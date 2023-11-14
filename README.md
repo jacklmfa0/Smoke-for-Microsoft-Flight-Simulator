@@ -4,10 +4,12 @@ This is a comprehensive beginners guide on how to add the Team Turbulence Smoke 
 First you'll need to add the smoke .spb/.xml files to your project. Copy the VisualEffectLibs folder and place it in the top most folder for your aircraft (Next to SimObjects). 
 
 Next, in my file, go to SimObjects -> Airplanes -> [YourAirplane] and open systems.cfg. Here you'll see two lines, the first line is explaining the significance of the second line. Copy the second line
-```circuit.21 = Type:CIRCUIT_LIGHT_LOGO				#Connections:bus.3#			Power:10, 15, 20.0#			Name:Logo_Light ; logo light 15W```
+```
+circuit.21 = Type:CIRCUIT_LIGHT_LOGO				#Connections:bus.3#			Power:10, 15, 20.0#			Name:Logo_Light ; logo light 15W
+```
 Paste this into your systems.cfg circuit section, i like to put it at the end, when you do this make sure you change the `21` to the next chronological number that would come after the previous circuit in the list.
 
-Next, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this: ```      <!-- SMOKE -->
+Next, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this: ```xml      <!-- SMOKE -->
 
 		<Component ID="FX_SMOKE_ID">
 
