@@ -7,7 +7,7 @@ Next, in my file, go to SimObjects -> Airplanes -> [YourAirplane] and open syste
 ```circuit.21 = Type:CIRCUIT_LIGHT_LOGO				#Connections:bus.3#			Power:10, 15, 20.0#			Name:Logo_Light ; logo light 15W```
 Paste this into your systems.cfg circuit section, i like to put it at the end, when you do this make sure you change the `21` to the next chronological number that would come after the previous circuit in the list.
 
-Nect, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this: ```      <!-- SMOKE -->
+Next, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this: ```      <!-- SMOKE -->
 
 		<Component ID="FX_SMOKE_ID">
 
