@@ -1,0 +1,5 @@
+<VisualEffectLibrary Version="1.0.0">
+	<VisualEffect File="F35-Smoke-White-Close-Ribbon"/>	
+	<VisualEffect File="F35-Smoke-White-Far"/>
+	<VisualEffect File="F35-Smoke-White-Near"/>
+</VisualEffectLibrary>

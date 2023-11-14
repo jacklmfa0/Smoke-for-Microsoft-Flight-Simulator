@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModelInfo>
+	<LODS>
+		<LOD minSize="0" ModelFile="GB_Ext.gltf"/>
+	</LODS>
+	<Behaviors>
+		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
+		<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+      <!-- SMOKE -->
+		<Component ID="FX_SMOKE_ID">
+      <!-- LEFT ESG -->
+		<!-- ESG pods disabled so that smoke can work on only the light switch for mutliplayer visibility
+		<Component ID="FX_SMOKE_ID_NODE1_WHITE_NEAR" Node="FX_SMOKE_RIGHT_MODEL_NODE">
+			  <UseTemplate Name="ASOBO_GT_FX">
+				<FX_CODE>(A:LIGHT LOGO:1, bool)</FX_GUID>
+			  </UseTemplate>
+			</Component>
+			<Component ID="FX_SMOKE_ID_NODE1_WHITE_FAR" Node="FX_SMOKE_RIGHT_MODEL_NODE">
+			  <UseTemplate Name="ASOBO_GT_FX">
+				<FX_CODE>(A:LIGHT LOGO:1, bool)</FX_CODE>
+				<FX_GUID>{2E980C6D-731D-462F-B273-14834102831B}</FX_GUID>
+			  </UseTemplate>
+			</Component>-->
+      
+      <!-- Smoke -->
+		    <Component ID="FX_SMOKE_ID_NODE3_WHITE_NEAR" Node="FX_SMOKE_RIGHT_MODEL_NODE">
+			  <UseTemplate Name="ASOBO_GT_FX">
+				<FX_CODE>(A:LIGHT LOGO:1, bool)</FX_CODE>
+				<FX_GUID>{2562B47E-5D9A-44D1-8DBA-73E9AAB7CF5C}</FX_GUID>
+			  </UseTemplate>
+			</Component>
+			<Component ID="FX_SMOKE_ID_NODE3_WHITE_FAR" Node="FX_SMOKE_RIGHT_MODEL_NODE">
+			  <UseTemplate Name="ASOBO_GT_FX">
+				<FX_CODE>(A:LIGHT LOGO:1, bool)</FX_CODE>
+				<FX_GUID>{2E980C6D-731D-462F-B273-14834102831B}</FX_GUID>
+			  </UseTemplate>
+			</Component>
+        </Component>
+	</Behaviors>
+</ModelInfo>
