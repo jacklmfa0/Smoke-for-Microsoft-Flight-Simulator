@@ -9,7 +9,9 @@ circuit.21 = Type:CIRCUIT_LIGHT_LOGO				#Connections:bus.3#			Power:10, 15, 20.0
 ```
 Paste this into your systems.cfg circuit section, i like to put it at the end, when you do this make sure you change the `21` to the next chronological number that would come after the previous circuit in the list.
 
-Next, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this: ```xml      <!-- SMOKE -->
+Next, you'll need to add in the model's behavior code this will be what tells the game what bindings you're using, and what effect is bound to that. Close Systems.cfg and open the model folder and open the Example XML file. Note that the code for the VFX is between `<Behaviors>` `</Behaviors>` tags. Copy this:
+```XML
+<!-- SMOKE -->
 
 		<Component ID="FX_SMOKE_ID">
 
@@ -67,7 +69,8 @@ Next, you'll need to add in the model's behavior code this will be what tells th
 
 			</Component>
 
-        </Component>```
+        </Component>
+```
         
 When you have this copied, paste the code in your Aircrafts Model.xml file MAKE SURE YOU AREN'T PUTTING IT INTO THE INTERIOR'S XML this is usually labeled as "int" in the file name. Look for a tag that says `<Behaviors>` I recommend scrolling down until you find the end of that section which will be marked as `</Behaviors>` add a new line just before this and then paste the code in.
 
