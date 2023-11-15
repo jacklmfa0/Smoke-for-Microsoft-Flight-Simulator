@@ -78,6 +78,8 @@ Next, you'll need to find the Node to attach the smoke to, this is basically tel
 
 In blender, you can click on a part of the model, and it will say on the top left what the name of that part is, this will be your Node take this name and replace each instance of `Node=""` with the name of whatever part you want it to emit from inside of the quotations.
 
+Now that all of the changes have been made, it's time to update the layout.JSON to tell the game that there are new files that need to be loaded. This can be done manually by altering the layout.JSON yourself, or you can use MSFSLayoutGenerator to  do this automatically. More information on how MSFSLayoutGenerator works, and how to install and use it, can be found in it's respective repo: https://github.com/HughesMDflyer4/MSFSLayoutGenerator
+
 These changes require a Sim Restart, so ALT + F4 out of MSFS 
 
 Load into the sim, get into the plane you implemented the change on, and if you've followed my instructions correctly, you should have smoke bound to LOGO LIGHTS toggle which can be bound to a button in controls. You can also quickly check if it worked by toggling master lights which is default L on your keyboard.
